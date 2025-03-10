@@ -1,0 +1,91 @@
+* {
+  font-family: "B Titr";
+}
+.factor {
+  width: 700px;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.sarbarg {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  margin: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.customer-ditails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+  align-items: center;
+
+  /* border: 2px solid red; */
+}
+
+.items {
+  border: 1px dotted black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.table {
+  padding: 5px;
+}
+
+.radif {
+  width: 2px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: "B Traffic";
+  height: 24px;
+  font-size: 20px;
+}
+
+.product-name {
+  width: 200px;
+}
+
+.product-quantity,
+.product-price {
+  width: 40px;
+  appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-price {
+  width: 100px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* مخفی کردن spinner */
+  margin: 0; /* حذف margin */
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+
+#total-price {
+  width: 280px;
+  text-align: end;
+  margin-left: 30px;
+}
+
+.sarbarg input {
+  border: 0;
+  text-align: center;
+}
