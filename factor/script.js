@@ -22,3 +22,22 @@ document.querySelector(".table").addEventListener("input", (e) => {
     });
   }
 });
+
+let lastRow = 8;
+
+document.getElementById("add-one-row").addEventListener("click", function (e) {
+  const table = document.getElementById("table");
+  ++lastRow;
+  table.insertAdjacentHTML(
+    "beforeend",
+    `<tr>
+<td>${lastRow}</td>
+<td><input type="text" class="product-name" /></td>
+<td>
+  <input type="number" class="product-quantity" id="quantity-${lastRow}" />
+</td>
+<td><input type="number" class="product-price" id="fi-${lastRow}" /></td>
+<td><label id="total-${lastRow}" class="total">0</label></td>
+</tr>`
+  );
+});

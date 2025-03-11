@@ -11,6 +11,7 @@ html {
   margin: 50px auto;
   border: 1px solid black;
   border-radius: 10px;
+  position: relative;
 }
 .sarbarg {
   display: grid;
@@ -127,4 +128,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .total-price p {
   margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: -5rem;
+}
+
+button {
+  border: 0.1rem dotted black;
+  padding: 0.3rem;
 }
